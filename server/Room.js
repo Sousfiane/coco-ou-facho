@@ -10,12 +10,11 @@ export default class Room {
     this.masterId = masterSocket.id;
     this.players = [];
     this.currentRound = 0;
-    this.currentRoundVotes = 0;
     this.currentCitation = null;
     this.maxRound = 20;
     this.citations = citations;
-    this.join(masterSocket, masterName);
     this.currentState.onEnter();
+    this.join(masterSocket, masterName);
   }
 
   changeState(newState) {
