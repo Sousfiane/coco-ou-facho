@@ -11,7 +11,7 @@ export default class Room {
     this.players = [];
     this.currentRound = 0;
     this.currentCitation = null;
-    this.maxRound = 20;
+    this.maxRound = 3;
     this.citations = citations;
     this.currentState.onEnter();
     this.join(masterSocket, masterName);
@@ -68,27 +68,15 @@ export default class Room {
   }
 
   resetPlayersVote() {
-    this.players.every((players) => (players.hasVoted = false));
+    this.players.forEach((players) => (players.hasVoted = false));
   }
 
-  waitingPlayers() {
-    this.io.to(this.roomId).emit("waiting players");
+  waitingPlayers(socket) {
+    socket.emit("waiting players");
   }
 
-  roundOn() {
-    this.io.to(this.roomId).emit("round on");
-  }
-
-  broadcastCitation() {
-    this.io.to(this.roomId).emit("update citation", this.currentCitation);
-  }
-
-  broadcastPlayers() {
-    this.io.to(this.roomId).emit("send players", this.players);
-  }
-
-  broadcastContext() {
-    this.io.to(this.roomId).emit("show context");
+  broadcastWaiting(socket) {
+    socket.emit("waiting players");
   }
 
   broadcastRoomId(socket) {
@@ -99,5 +87,25 @@ export default class Room {
     if (this.masterId == socket.id) {
       socket.emit("send masterToken", this.masterId);
     }
+  }
+
+  broadcastCitation() {
+    this.io.to(this.roomId).emit("send citation", this.currentCitation);
+  }
+
+  broadcastPlayers() {
+    this.io.to(this.roomId).emit("send players", this.players);
+  }
+
+  broadcastCountdown(tick) {
+    this.io.to(this.roomId).emit("send countdown", tick);
+  }
+
+  broadcastContext() {
+    this.io.to(this.roomId).emit("show context");
+  }
+
+  broadcastEndgame() {
+    this.io.to(this.roomId).emit("end game");
   }
 }

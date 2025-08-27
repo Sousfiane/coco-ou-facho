@@ -3,19 +3,23 @@ export default class RoomState {
     this.room = room;
   }
   onEnter() {
-    throw new Error("Methode not implemented");
+    console.log(`Room #${this.room.roomId}: Entering`, this.getName());
   }
   onExit() {
-    throw new Error("Methode not implemented");
+    console.log(`Room #${this.room.roomId}: Exiting`, this.getName());
   }
   handleStart() {
-    throw new Error("Methode not implemented");
+    console.log(
+      `Room #${this.room.roomId}: Can't start, the game is already started`,
+    );
   }
   handleJoin(socket, player) {
-    throw new Error("Methode not implemented");
+    console.log(
+      `Room #${this.room.roomId}: ${socket.id} tried to join the room but the game already started`,
+    );
   }
   handleVote(socket, vote) {
-    throw new Error("Methode not implemented");
+    console.log(`Room #${this.room.roomId}: Can't vote yet`);
   }
   getName() {
     return this.constructor.name;

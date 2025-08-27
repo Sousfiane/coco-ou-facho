@@ -1,52 +1,346 @@
 [
-  {"texte": "Il faut réhabiliter l’autorité, car sans elle il n’y a pas de liberté.", "auteur": "Nicolas Sarkozy", "camp": "droite", "annee": "2000"},
-  {"texte": "La femme française veut être respectée, elle ne veut pas être l’égale de l’homme.", "auteur": "François Mitterrand", "camp": "gauche", "annee": "1947"},
-  {"texte": "L’homme africain n’est pas assez entré dans l’histoire.", "auteur": "Nicolas Sarkozy", "camp": "droite", "annee": "2007"},
-  {"texte": "Le voile n’est pas acceptable, il n’y aura jamais de voile à l’école de la République.", "auteur": "Manuel Valls", "camp": "gauche", "annee": "2016"},
-  {"texte": "La France, on l’aime ou on la quitte.", "auteur": "Nicolas Sarkozy", "camp": "droite", "annee": "2005"},
-  {"texte": "Il faut savoir fermer les frontières quand c’est nécessaire.", "auteur": "François Hollande", "camp": "gauche", "annee": "2015"},
-  {"texte": "La République, c’est l’ordre, pas le désordre.", "auteur": "Jacques Chirac", "camp": "droite", "annee": "1991"},
-  {"texte": "Nous devons réduire l’immigration légale.", "auteur": "Lionel Jospin", "camp": "gauche", "annee": "1997"},
-  {"texte": "Il ne faut pas avoir peur du mot autorité.", "auteur": "Ségolène Royal", "camp": "gauche", "annee": "2006"},
-  {"texte": "Quand il y a une grève en France, plus personne ne s’en aperçoit.", "auteur": "Nicolas Sarkozy", "camp": "droite", "annee": "2008"},
-  {"texte": "Nous ne pouvons pas accueillir toute la misère du monde.", "auteur": "Michel Rocard", "camp": "gauche", "annee": "1989"},
-  {"texte": "Il faut des centres fermés pour les immigrés clandestins.", "auteur": "François Hollande", "camp": "gauche", "annee": "2012"},
-  {"texte": "La France ne peut pas être un supermarché pour les étrangers.", "auteur": "Valérie Pécresse", "camp": "droite", "annee": "2011"},
-  {"texte": "Il n’y a pas de raison que l’État s’occupe des Roms.", "auteur": "François Fillon", "camp": "droite", "annee": "2010"},
-  {"texte": "L’assistanat est un cancer de la société.", "auteur": "Laurent Wauquiez", "camp": "droite", "annee": "2011"},
-  {"texte": "La burqa n’est pas la bienvenue en France.", "auteur": "François Hollande", "camp": "gauche", "annee": "2013"},
-  {"texte": "Il faut aimer l’entreprise.", "auteur": "Manuel Valls", "camp": "gauche", "annee": "2014"},
-  {"texte": "L’ordre républicain doit être respecté partout.", "auteur": "Gérald Darmanin", "camp": "droite", "annee": "2020"},
-  {"texte": "La sécurité est la première des libertés.", "auteur": "Lionel Jospin", "camp": "gauche", "annee": "1998"},
-  {"texte": "Il n’y a pas de place pour l’islam politique en France.", "auteur": "Jean-Luc Mélenchon", "camp": "gauche", "annee": "2016"},
-  {"texte": "Quand on est en France, on respecte les lois françaises.", "auteur": "Nicolas Sarkozy", "camp": "droite", "annee": "2009"},
-  {"texte": "L’école doit apprendre l’obéissance.", "auteur": "François Mitterrand", "camp": "gauche", "annee": "1958"},
-  {"texte": "Les sanctions doivent tomber pour les chômeurs qui refusent un emploi.", "auteur": "Manuel Valls", "camp": "gauche", "annee": "2015"},
-  {"texte": "L’immigration zéro est un objectif souhaitable.", "auteur": "Valéry Giscard d’Estaing", "camp": "droite", "annee": "1991"},
-  {"texte": "Il faut des quotas d’immigrés.", "auteur": "François Hollande", "camp": "gauche", "annee": "2011"},
-  {"texte": "La tolérance zéro doit s’appliquer aux délinquants.", "auteur": "Nicolas Sarkozy", "camp": "droite", "annee": "2004"},
-  {"texte": "On ne peut pas tout attendre de l’État.", "auteur": "François Mitterrand", "camp": "gauche", "annee": "1984"},
-  {"texte": "La République, c’est la fermeté.", "auteur": "Ségolène Royal", "camp": "gauche", "annee": "2007"},
-  {"texte": "La prison est faite pour les voyous.", "auteur": "Charles Pasqua", "camp": "droite", "annee": "1986"},
-  {"texte": "Nous devons expulser plus efficacement.", "auteur": "François Hollande", "camp": "gauche", "annee": "2012"},
-  {"texte": "L’immigration doit être choisie, pas subie.", "auteur": "Nicolas Sarkozy", "camp": "droite", "annee": "2006"},
-  {"texte": "Il faut savoir contrôler les flux migratoires.", "auteur": "Martine Aubry", "camp": "gauche", "annee": "2010"},
-  {"texte": "La liberté ne peut pas être l’anarchie.", "auteur": "François Mitterrand", "camp": "gauche", "annee": "1981"},
-  {"texte": "Nous devons rétablir l’ordre dans les quartiers.", "auteur": "Nicolas Sarkozy", "camp": "droite", "annee": "2005"},
-  {"texte": "L’entreprise doit être au cœur de la société.", "auteur": "Manuel Valls", "camp": "gauche", "annee": "2014"},
-  {"texte": "La sécurité, c’est la première exigence.", "auteur": "Lionel Jospin", "camp": "gauche", "annee": "1998"},
-  {"texte": "Les voyous doivent avoir peur de la police.", "auteur": "Nicolas Sarkozy", "camp": "droite", "annee": "2007"},
-  {"texte": "Nous devons contrôler nos frontières.", "auteur": "François Hollande", "camp": "gauche", "annee": "2015"},
-  {"texte": "L’assimilation est une condition pour être français.", "auteur": "Nicolas Sarkozy", "camp": "droite", "annee": "2008"},
-  {"texte": "Le travail doit être remis au cœur des valeurs.", "auteur": "Ségolène Royal", "camp": "gauche", "annee": "2007"},
-  {"texte": "Nous devons expulser les clandestins.", "auteur": "Charles Pasqua", "camp": "droite", "annee": "1995"},
-  {"texte": "Il n’y a pas de démocratie sans discipline.", "auteur": "François Mitterrand", "camp": "gauche", "annee": "1960"},
-  {"texte": "La République ne reculera jamais devant les voyous.", "auteur": "Nicolas Sarkozy", "camp": "droite", "annee": "2006"},
-  {"texte": "Il faut réhabiliter la valeur travail.", "auteur": "François Hollande", "camp": "gauche", "annee": "2012"},
-  {"texte": "L’identité nationale doit être défendue.", "auteur": "Nicolas Sarkozy", "camp": "droite", "annee": "2009"},
-  {"texte": "La République doit être ferme face aux communautarismes.", "auteur": "Manuel Valls", "camp": "gauche", "annee": "2015"},
-  {"texte": "Nous devons punir plus sévèrement les récidivistes.", "auteur": "Nicolas Sarkozy", "camp": "droite", "annee": "2007"},
-  {"texte": "La France ne peut pas accueillir davantage d’immigrés.", "auteur": "François Hollande", "camp": "gauche", "annee": "2013"},
-  {"texte": "Il faut nettoyer les cités au Kärcher.", "auteur": "Nicolas Sarkozy", "camp": "droite", "annee": "2005"}
+  {
+    "texte": "Il faut réhabiliter l’autorité, car sans elle il n’y a pas de liberté.",
+    "auteur": "Nicolas Sarkozy",
+    "camp": "droite",
+    "annee": "2000",
+    "contexte": "Déclaration de Nicolas Sarkozy lorsqu’il était ministre de l’Intérieur, pour défendre le retour à l’autorité républicaine."
+  },
+  {
+    "texte": "La femme française veut être respectée, elle ne veut pas être l’égale de l’homme.",
+    "auteur": "François Mitterrand",
+    "camp": "gauche",
+    "annee": "1947",
+    "contexte": "Phrase extraite d’un discours de jeunesse de Mitterrand, reflétant les mentalités de l’époque."
+  },
+  {
+    "texte": "L’homme africain n’est pas assez entré dans l’histoire.",
+    "auteur": "Nicolas Sarkozy",
+    "camp": "droite",
+    "annee": "2007",
+    "contexte": "Discours de Dakar, très critiqué, où Sarkozy parlait du rapport de l’Afrique à la modernité."
+  },
+  {
+    "texte": "Le voile n’est pas acceptable, il n’y aura jamais de voile à l’école de la République.",
+    "auteur": "Manuel Valls",
+    "camp": "gauche",
+    "annee": "2016",
+    "contexte": "Déclaration en tant que Premier ministre dans le débat sur la laïcité et l’école."
+  },
+  {
+    "texte": "La France, on l’aime ou on la quitte.",
+    "auteur": "Nicolas Sarkozy",
+    "camp": "droite",
+    "annee": "2005",
+    "contexte": "Phrase attribuée à Sarkozy lors des polémiques sur l’immigration et l’intégration."
+  },
+  {
+    "texte": "Il faut savoir fermer les frontières quand c’est nécessaire.",
+    "auteur": "François Hollande",
+    "camp": "gauche",
+    "annee": "2015",
+    "contexte": "Déclaration après les attentats de 2015 sur le contrôle des frontières européennes."
+  },
+  {
+    "texte": "La République, c’est l’ordre, pas le désordre.",
+    "auteur": "Jacques Chirac",
+    "camp": "droite",
+    "annee": "1991",
+    "contexte": "Phrase prononcée par Chirac en réaction aux mouvements sociaux et aux émeutes urbaines."
+  },
+  {
+    "texte": "Nous devons réduire l’immigration légale.",
+    "auteur": "Lionel Jospin",
+    "camp": "gauche",
+    "annee": "1997",
+    "contexte": "Déclaration de Jospin en tant que Premier ministre, alors que la gauche devait répondre aux inquiétudes sur l’immigration."
+  },
+  {
+    "texte": "Il ne faut pas avoir peur du mot autorité.",
+    "auteur": "Ségolène Royal",
+    "camp": "gauche",
+    "annee": "2006",
+    "contexte": "Phrase de campagne présidentielle pour défendre une gauche de l’ordre."
+  },
+  {
+    "texte": "Quand il y a une grève en France, plus personne ne s’en aperçoit.",
+    "auteur": "Nicolas Sarkozy",
+    "camp": "droite",
+    "annee": "2008",
+    "contexte": "Phrase ironique de Sarkozy sur la fréquence des grèves en France."
+  },
+  {
+    "texte": "Nous ne pouvons pas accueillir toute la misère du monde.",
+    "auteur": "Michel Rocard",
+    "camp": "gauche",
+    "annee": "1989",
+    "contexte": "Discours resté célèbre, prononcé quand il était Premier ministre, sur les limites de l’accueil des immigrés."
+  },
+  {
+    "texte": "Il faut des centres fermés pour les immigrés clandestins.",
+    "auteur": "François Hollande",
+    "camp": "gauche",
+    "annee": "2012",
+    "contexte": "Proposition lors d’un débat sur l’immigration durant sa campagne présidentielle."
+  },
+  {
+    "texte": "La France ne peut pas être un supermarché pour les étrangers.",
+    "auteur": "Valérie Pécresse",
+    "camp": "droite",
+    "annee": "2011",
+    "contexte": "Déclaration lors des débats sur la réforme de l’immigration."
+  },
+  {
+    "texte": "Il n’y a pas de raison que l’État s’occupe des Roms.",
+    "auteur": "François Fillon",
+    "camp": "droite",
+    "annee": "2010",
+    "contexte": "Déclaration polémique sur les populations roms en France."
+  },
+  {
+    "texte": "L’assistanat est un cancer de la société.",
+    "auteur": "Laurent Wauquiez",
+    "camp": "droite",
+    "annee": "2011",
+    "contexte": "Phrase polémique de Wauquiez sur les aides sociales."
+  },
+  {
+    "texte": "La burqa n’est pas la bienvenue en France.",
+    "auteur": "François Hollande",
+    "camp": "gauche",
+    "annee": "2013",
+    "contexte": "Déclaration sur la laïcité et l’interdiction du voile intégral."
+  },
+  {
+    "texte": "Il faut aimer l’entreprise.",
+    "auteur": "Manuel Valls",
+    "camp": "gauche",
+    "annee": "2014",
+    "contexte": "Discours prononcé devant le patronat pour afficher une gauche pro-entreprise."
+  },
+  {
+    "texte": "L’ordre républicain doit être respecté partout.",
+    "auteur": "Gérald Darmanin",
+    "camp": "droite",
+    "annee": "2020",
+    "contexte": "Déclaration en tant que ministre de l’Intérieur face aux violences urbaines."
+  },
+  {
+    "texte": "La sécurité est la première des libertés.",
+    "auteur": "Lionel Jospin",
+    "camp": "gauche",
+    "annee": "1998",
+    "contexte": "Phrase de Jospin pour répondre aux critiques sur la politique sécuritaire de la gauche."
+  },
+  {
+    "texte": "Il n’y a pas de place pour l’islam politique en France.",
+    "auteur": "Jean-Luc Mélenchon",
+    "camp": "gauche",
+    "annee": "2016",
+    "contexte": "Déclaration après les attentats pour se positionner sur la laïcité."
+  },
+  {
+    "texte": "Quand on est en France, on respecte les lois françaises.",
+    "auteur": "Nicolas Sarkozy",
+    "camp": "droite",
+    "annee": "2009",
+    "contexte": "Phrase prononcée par Sarkozy dans le cadre des débats sur l’intégration."
+  },
+  {
+    "texte": "L’école doit apprendre l’obéissance.",
+    "auteur": "François Mitterrand",
+    "camp": "gauche",
+    "annee": "1958",
+    "contexte": "Citation issue d’un texte de jeunesse de Mitterrand sur l’éducation."
+  },
+  {
+    "texte": "Les sanctions doivent tomber pour les chômeurs qui refusent un emploi.",
+    "auteur": "Manuel Valls",
+    "camp": "gauche",
+    "annee": "2015",
+    "contexte": "Déclaration pour justifier une politique plus stricte envers les demandeurs d’emploi."
+  },
+  {
+    "texte": "L’immigration zéro est un objectif souhaitable.",
+    "auteur": "Valéry Giscard d’Estaing",
+    "camp": "droite",
+    "annee": "1991",
+    "contexte": "Déclaration de Giscard sur la politique migratoire française."
+  },
+  {
+    "texte": "Il faut des quotas d’immigrés.",
+    "auteur": "François Hollande",
+    "camp": "gauche",
+    "annee": "2011",
+    "contexte": "Proposition de Hollande pour réguler l’immigration économique."
+  },
+  {
+    "texte": "La tolérance zéro doit s’appliquer aux délinquants.",
+    "auteur": "Nicolas Sarkozy",
+    "camp": "droite",
+    "annee": "2004",
+    "contexte": "Déclaration en tant que ministre de l’Intérieur dans le cadre de sa politique sécuritaire."
+  },
+  {
+    "texte": "On ne peut pas tout attendre de l’État.",
+    "auteur": "François Mitterrand",
+    "camp": "gauche",
+    "annee": "1984",
+    "contexte": "Phrase de Mitterrand incitant à la responsabilité individuelle et collective."
+  },
+  {
+    "texte": "La République, c’est la fermeté.",
+    "auteur": "Ségolène Royal",
+    "camp": "gauche",
+    "annee": "2007",
+    "contexte": "Slogan récurrent de Royal lors de la présidentielle de 2007."
+  },
+  {
+    "texte": "La prison est faite pour les voyous.",
+    "auteur": "Charles Pasqua",
+    "camp": "droite",
+    "annee": "1986",
+    "contexte": "Déclaration choc de Pasqua dans le cadre de sa politique répressive."
+  },
+  {
+    "texte": "Nous devons expulser plus efficacement.",
+    "auteur": "François Hollande",
+    "camp": "gauche",
+    "annee": "2012",
+    "contexte": "Déclaration de campagne sur la gestion des expulsions."
+  },
+  {
+    "texte": "L’immigration doit être choisie, pas subie.",
+    "auteur": "Nicolas Sarkozy",
+    "camp": "droite",
+    "annee": "2006",
+    "contexte": "Phrase clé de Sarkozy pour promouvoir l’immigration économique sélective."
+  },
+  {
+    "texte": "Il faut savoir contrôler les flux migratoires.",
+    "auteur": "Martine Aubry",
+    "camp": "gauche",
+    "annee": "2010",
+    "contexte": "Déclaration d’Aubry sur la régulation de l’immigration."
+  },
+  {
+    "texte": "La liberté ne peut pas être l’anarchie.",
+    "auteur": "François Mitterrand",
+    "camp": "gauche",
+    "annee": "1981",
+    "contexte": "Discours de Mitterrand en tant que président sur l’importance de l’ordre public."
+  },
+  {
+    "texte": "Nous devons rétablir l’ordre dans les quartiers.",
+    "auteur": "Nicolas Sarkozy",
+    "camp": "droite",
+    "annee": "2005",
+    "contexte": "Déclaration en pleine crise des banlieues et des émeutes urbaines."
+  },
+  {
+    "texte": "L’entreprise doit être au cœur de la société.",
+    "auteur": "Manuel Valls",
+    "camp": "gauche",
+    "annee": "2014",
+    "contexte": "Discours en faveur d’une politique économique tournée vers les entreprises."
+  },
+  {
+    "texte": "La sécurité, c’est la première exigence.",
+    "auteur": "Lionel Jospin",
+    "camp": "gauche",
+    "annee": "1998",
+    "contexte": "Phrase de Jospin pour répondre à la demande croissante de sécurité."
+  },
+  {
+    "texte": "Les voyous doivent avoir peur de la police.",
+    "auteur": "Nicolas Sarkozy",
+    "camp": "droite",
+    "annee": "2007",
+    "contexte": "Déclaration dans le cadre de sa politique sécuritaire musclée."
+  },
+  {
+    "texte": "Nous devons contrôler nos frontières.",
+    "auteur": "François Hollande",
+    "camp": "gauche",
+    "annee": "2015",
+    "contexte": "Déclaration après les attentats terroristes de novembre 2015."
+  },
+  {
+    "texte": "L’assimilation est une condition pour être français.",
+    "auteur": "Nicolas Sarkozy",
+    "camp": "droite",
+    "annee": "2008",
+    "contexte": "Déclaration sur la politique d’intégration des immigrés."
+  },
+  {
+    "texte": "Le travail doit être remis au cœur des valeurs.",
+    "auteur": "Ségolène Royal",
+    "camp": "gauche",
+    "annee": "2007",
+    "contexte": "Proposition récurrente dans son programme présidentiel."
+  },
+  {
+    "texte": "Nous devons expulser les clandestins.",
+    "auteur": "Charles Pasqua",
+    "camp": "droite",
+    "annee": "1995",
+    "contexte": "Phrase choc de Pasqua sur la politique migratoire."
+  },
+  {
+    "texte": "Il n’y a pas de démocratie sans discipline.",
+    "auteur": "François Mitterrand",
+    "camp": "gauche",
+    "annee": "1960",
+    "contexte": "Citation issue d’un discours sur l’équilibre entre liberté et ordre."
+  },
+  {
+    "texte": "La République ne reculera jamais devant les voyous.",
+    "auteur": "Nicolas Sarkozy",
+    "camp": "droite",
+    "annee": "2006",
+    "contexte": "Discours en tant que ministre de l’Intérieur pour affirmer la fermeté de l’État."
+  },
+  {
+    "texte": "Il faut réhabiliter la valeur travail.",
+    "auteur": "François Hollande",
+    "camp": "gauche",
+    "annee": "2012",
+    "contexte": "Phrase de campagne présidentielle pour mettre en avant le travail comme valeur centrale."
+  },
+  {
+    "texte": "L’identité nationale doit être défendue.",
+    "auteur": "Nicolas Sarkozy",
+    "camp": "droite",
+    "annee": "2009",
+    "contexte": "Déclaration dans le cadre du débat sur l’identité nationale."
+  },
+  {
+    "texte": "La République doit être ferme face aux communautarismes.",
+    "auteur": "Manuel Valls",
+    "camp": "gauche",
+    "annee": "2015",
+    "contexte": "Déclaration dans un discours sur la laïcité et l’unité républicaine."
+  },
+  {
+    "texte": "Nous devons punir plus sévèrement les récidivistes.",
+    "auteur": "Nicolas Sarkozy",
+    "camp": "droite",
+    "annee": "2007",
+    "contexte": "Annonce de mesures sécuritaires renforcées contre la récidive."
+  },
+  {
+    "texte": "La France ne peut pas accueillir davantage d’immigrés.",
+    "auteur": "François Hollande",
+    "camp": "gauche",
+    "annee": "2013",
+    "contexte": "Déclaration sur les limites de la politique d’accueil."
+  },
+  {
+    "texte": "Il faut nettoyer les cités au Kärcher.",
+    "auteur": "Nicolas Sarkozy",
+    "camp": "droite",
+    "annee": "2005",
+    "contexte": "Phrase choc prononcée lors d’une visite à Argenteuil après des violences urbaines."
+  }
 ]
 

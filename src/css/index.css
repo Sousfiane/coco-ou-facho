@@ -22,7 +22,7 @@ footer {
     text-align: center;
 }
 
-main {
+.app {
     flex: 1;
     display: flex;
     justify-content: center;
@@ -42,6 +42,15 @@ main {
     animation: fadeIn 0.3s ease-in-out;
 }
 
+#citationContainer {
+    padding: 1rem;
+    border-radius: 12px;
+}
+
+#countdown {
+    text-align: center;
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -56,7 +65,7 @@ main {
 
 /* Inputs */
 input {
-    width: calc(100% - 1rem);
+    width: calc(100%);
     padding: 0.5rem;
     margin-bottom: 1rem;
     border: 1px solid #ccc;
@@ -79,28 +88,30 @@ button:hover {
     background: #357ab8;
 }
 
-#leftButton {
+.leftButton {
     background: #27ae60;
 }
 
-#leftButton:hover {
+.leftButton:hover {
     background: #1e874b;
 }
 
-#rightButton {
+.rightButton {
     background: #e74c3c;
 }
 
-#rightButton:hover {
+.rightButton:hover {
     background: #c0392b;
 }
 
 .correct {
-    background-color: green;
+    color: white;
+    background-color: #27ae60;
 }
 
 .incorrect {
-    background-color: red;
+    color: white;
+    background-color: #e74c3c;
 }
 
 .hidden {
@@ -108,7 +119,7 @@ button:hover {
 }
 
 /* Game UI */
-#citationText {
+.citationText {
     margin-bottom: 1.5rem;
     font-size: 1.2rem;
     font-weight: bold;
