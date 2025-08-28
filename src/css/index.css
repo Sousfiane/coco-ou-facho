@@ -42,12 +42,12 @@ footer {
     animation: fadeIn 0.3s ease-in-out;
 }
 
-#citationContainer {
+.citationContainer {
     padding: 1rem;
     border-radius: 12px;
 }
 
-#countdown {
+.countdown {
     text-align: center;
 }
 

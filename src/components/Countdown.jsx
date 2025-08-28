@@ -1,7 +1,7 @@
 const Countdown = ({ tick }) => {
   return (
     <div className="card">
-      <h2>Prochain round dans {tick || "..."}</h2>
+      <h2 className="countdown">Prochain round dans {tick || "..."}</h2>
     </div>
   );
 };

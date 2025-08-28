@@ -11,10 +11,9 @@ const Game = ({
   return (
     <div className="card">
       <div
-        id="citationContainer"
         className={`citationContainer${answer === null ? "" : answer ? " correct" : " incorrect"}`}
       >
-        <h2 className="">{citation?.texte || "Citation..."}</h2>
+        <h2 className="citationText">{citation?.texte || "Citation..."}</h2>
         <h4>{answer === null || citation.auteur}</h4>
         <p>{showContext ? citation.contexte : ""}</p>
       </div>
