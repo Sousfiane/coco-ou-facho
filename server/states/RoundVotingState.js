@@ -8,7 +8,7 @@ export default class RoundVotingState extends RoomState {
     this.room.broadcastCitation();
   }
   handleVote(socket, vote) {
-    console.log(`Room #${this.room.roomId} ${socket.id} has voted`);
+    console.log(`Room #${this.room.roomId}: ${socket.id} has voted`);
     this.room.checkVote(socket, vote, this.startTime);
     this.room.broadcastPlayers();
     if (this.room.everyoneVoted()) {
