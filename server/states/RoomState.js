@@ -21,6 +21,16 @@ export default class RoomState {
   handleVote(socket, vote) {
     console.log(`Room #${this.room.roomId}: Can't vote yet`);
   }
+  handleDisconnect(socketId) {
+    this.room.players = this.room.players.filter(
+      (player) => player.id !== socketId,
+    );
+    if (socketId === this.room.masterId && this.room.players.length !== 0) {
+      this.room.masterId = this.room.players[0].id;
+      this.room.io.to(this.masterId).emit("send masterToken", this.masterId);
+    }
+    this.room.broadcastPlayers();
+  }
   getName() {
     return this.constructor.name;
   }

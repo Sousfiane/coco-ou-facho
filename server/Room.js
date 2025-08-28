@@ -11,7 +11,7 @@ export default class Room {
     this.players = [];
     this.currentRound = 0;
     this.currentCitation = null;
-    this.maxRound = 3;
+    this.maxRound = 1;
     this.citations = citations;
     this.currentState.onEnter();
     this.join(masterSocket, masterName);
@@ -63,6 +63,13 @@ export default class Room {
     socket.emit("show answer", result);
   }
 
+  relaunchGame() {
+    this.currentRound = 0;
+    this.players.forEach((player) => (player.score = 0));
+    this.broadcastPlayers();
+    this.changeState(new PlayingState(this));
+  }
+
   everyoneVoted() {
     return this.players.every((player) => player.hasVoted);
   }
@@ -72,16 +79,7 @@ export default class Room {
   }
 
   playerDisconnect(socketId) {
-    this.players = this.players.filter((player) => player.id !== socketId);
-    if (socketId === this.masterId && this.players.length !== 0) {
-      this.masterId = this.players[0].id;
-      this.io.to(this.masterId).emit("send masterToken", this.masterId);
-    }
-    this.broadcastPlayers();
-  }
-
-  waitingPlayers(socket) {
-    socket.emit("waiting players");
+    this.currentState.handleDisconnect(socketId);
   }
 
   broadcastWaiting(socket) {

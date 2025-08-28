@@ -18,4 +18,13 @@ export default class RoundVotingState extends RoomState {
       }, 1000);
     }
   }
+  handleDisconnect(socketId) {
+    super.handleDisconnect(socketId);
+    if (this.room.everyoneVoted()) {
+      this.room.currentRound++;
+      setTimeout(() => {
+        this.room.changeState(new RoundEndingState(this.room));
+      }, 1000);
+    }
+  }
 }

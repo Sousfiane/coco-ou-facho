@@ -48,6 +48,10 @@ io.on("connection", (socket) => {
     rooms[roomId].next();
   });
 
+  socket.on("relaunch game", (roomId) => {
+    rooms[roomId].relaunchGame();
+  });
+
   socket.on("disconnect", () => {
     console.log("client disconnected:", socket.id);
     if (socket.roomId) {

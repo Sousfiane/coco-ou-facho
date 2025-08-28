@@ -13,6 +13,6 @@ export default class WaitingState extends RoomState {
     this.room.broadcastRoomId(socket);
     this.room.broadcastMasterToken(socket);
     this.room.broadcastPlayers();
-    this.room.waitingPlayers(socket);
+    this.room.broadcastWaiting(socket);
   }
 }
