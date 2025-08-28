@@ -32,6 +32,7 @@ io.on("connection", (socket) => {
   });
 
   socket.on("join room", (playerName, roomId) => {
+    socket.roomId = roomId;
     rooms[roomId].join(socket, playerName);
   });
 
@@ -49,5 +50,8 @@ io.on("connection", (socket) => {
 
   socket.on("disconnect", () => {
     console.log("client disconnected:", socket.id);
+    if (socket.roomId) {
+      rooms[socket.roomId].playerDisconnect(socket.id);
+    }
   });
 });

@@ -71,6 +71,15 @@ export default class Room {
     this.players.forEach((players) => (players.hasVoted = false));
   }
 
+  playerDisconnect(socketId) {
+    this.players = this.players.filter((player) => player.id !== socketId);
+    if (socketId === this.masterId && this.players.length !== 0) {
+      this.masterId = this.players[0].id;
+      this.io.to(this.masterId).emit("send masterToken", this.masterId);
+    }
+    this.broadcastPlayers();
+  }
+
   waitingPlayers(socket) {
     socket.emit("waiting players");
   }
