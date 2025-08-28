@@ -1,346 +1,563 @@
 [
   {
-    "texte": "Il faut réhabiliter l’autorité, car sans elle il n’y a pas de liberté.",
-    "auteur": "Nicolas Sarkozy",
-    "camp": "droite",
-    "annee": "2000",
-    "contexte": "Déclaration de Nicolas Sarkozy lorsqu’il était ministre de l’Intérieur, pour défendre le retour à l’autorité républicaine."
-  },
-  {
-    "texte": "La femme française veut être respectée, elle ne veut pas être l’égale de l’homme.",
-    "auteur": "François Mitterrand",
-    "camp": "gauche",
-    "annee": "1947",
-    "contexte": "Phrase extraite d’un discours de jeunesse de Mitterrand, reflétant les mentalités de l’époque."
-  },
-  {
-    "texte": "L’homme africain n’est pas assez entré dans l’histoire.",
-    "auteur": "Nicolas Sarkozy",
-    "camp": "droite",
-    "annee": "2007",
-    "contexte": "Discours de Dakar, très critiqué, où Sarkozy parlait du rapport de l’Afrique à la modernité."
-  },
-  {
-    "texte": "Le voile n’est pas acceptable, il n’y aura jamais de voile à l’école de la République.",
-    "auteur": "Manuel Valls",
-    "camp": "gauche",
-    "annee": "2016",
-    "contexte": "Déclaration en tant que Premier ministre dans le débat sur la laïcité et l’école."
-  },
-  {
-    "texte": "La France, on l’aime ou on la quitte.",
-    "auteur": "Nicolas Sarkozy",
-    "camp": "droite",
-    "annee": "2005",
-    "contexte": "Phrase attribuée à Sarkozy lors des polémiques sur l’immigration et l’intégration."
-  },
-  {
-    "texte": "Il faut savoir fermer les frontières quand c’est nécessaire.",
-    "auteur": "François Hollande",
-    "camp": "gauche",
-    "annee": "2015",
-    "contexte": "Déclaration après les attentats de 2015 sur le contrôle des frontières européennes."
-  },
-  {
-    "texte": "La République, c’est l’ordre, pas le désordre.",
-    "auteur": "Jacques Chirac",
-    "camp": "droite",
-    "annee": "1991",
-    "contexte": "Phrase prononcée par Chirac en réaction aux mouvements sociaux et aux émeutes urbaines."
-  },
-  {
-    "texte": "Nous devons réduire l’immigration légale.",
-    "auteur": "Lionel Jospin",
-    "camp": "gauche",
-    "annee": "1997",
-    "contexte": "Déclaration de Jospin en tant que Premier ministre, alors que la gauche devait répondre aux inquiétudes sur l’immigration."
-  },
-  {
-    "texte": "Il ne faut pas avoir peur du mot autorité.",
-    "auteur": "Ségolène Royal",
-    "camp": "gauche",
-    "annee": "2006",
-    "contexte": "Phrase de campagne présidentielle pour défendre une gauche de l’ordre."
-  },
-  {
-    "texte": "Quand il y a une grève en France, plus personne ne s’en aperçoit.",
-    "auteur": "Nicolas Sarkozy",
-    "camp": "droite",
-    "annee": "2008",
-    "contexte": "Phrase ironique de Sarkozy sur la fréquence des grèves en France."
-  },
-  {
-    "texte": "Nous ne pouvons pas accueillir toute la misère du monde.",
-    "auteur": "Michel Rocard",
-    "camp": "gauche",
-    "annee": "1989",
-    "contexte": "Discours resté célèbre, prononcé quand il était Premier ministre, sur les limites de l’accueil des immigrés."
-  },
-  {
-    "texte": "Il faut des centres fermés pour les immigrés clandestins.",
-    "auteur": "François Hollande",
-    "camp": "gauche",
-    "annee": "2012",
-    "contexte": "Proposition lors d’un débat sur l’immigration durant sa campagne présidentielle."
-  },
-  {
-    "texte": "La France ne peut pas être un supermarché pour les étrangers.",
-    "auteur": "Valérie Pécresse",
-    "camp": "droite",
-    "annee": "2011",
-    "contexte": "Déclaration lors des débats sur la réforme de l’immigration."
-  },
-  {
-    "texte": "Il n’y a pas de raison que l’État s’occupe des Roms.",
-    "auteur": "François Fillon",
-    "camp": "droite",
-    "annee": "2010",
-    "contexte": "Déclaration polémique sur les populations roms en France."
-  },
-  {
-    "texte": "L’assistanat est un cancer de la société.",
-    "auteur": "Laurent Wauquiez",
-    "camp": "droite",
-    "annee": "2011",
-    "contexte": "Phrase polémique de Wauquiez sur les aides sociales."
-  },
-  {
-    "texte": "La burqa n’est pas la bienvenue en France.",
-    "auteur": "François Hollande",
-    "camp": "gauche",
-    "annee": "2013",
-    "contexte": "Déclaration sur la laïcité et l’interdiction du voile intégral."
-  },
-  {
-    "texte": "Il faut aimer l’entreprise.",
-    "auteur": "Manuel Valls",
-    "camp": "gauche",
-    "annee": "2014",
-    "contexte": "Discours prononcé devant le patronat pour afficher une gauche pro-entreprise."
-  },
-  {
-    "texte": "L’ordre républicain doit être respecté partout.",
-    "auteur": "Gérald Darmanin",
-    "camp": "droite",
-    "annee": "2020",
-    "contexte": "Déclaration en tant que ministre de l’Intérieur face aux violences urbaines."
-  },
-  {
-    "texte": "La sécurité est la première des libertés.",
-    "auteur": "Lionel Jospin",
-    "camp": "gauche",
-    "annee": "1998",
-    "contexte": "Phrase de Jospin pour répondre aux critiques sur la politique sécuritaire de la gauche."
-  },
-  {
-    "texte": "Il n’y a pas de place pour l’islam politique en France.",
-    "auteur": "Jean-Luc Mélenchon",
-    "camp": "gauche",
-    "annee": "2016",
-    "contexte": "Déclaration après les attentats pour se positionner sur la laïcité."
-  },
-  {
-    "texte": "Quand on est en France, on respecte les lois françaises.",
-    "auteur": "Nicolas Sarkozy",
-    "camp": "droite",
-    "annee": "2009",
-    "contexte": "Phrase prononcée par Sarkozy dans le cadre des débats sur l’intégration."
-  },
-  {
-    "texte": "L’école doit apprendre l’obéissance.",
-    "auteur": "François Mitterrand",
-    "camp": "gauche",
-    "annee": "1958",
-    "contexte": "Citation issue d’un texte de jeunesse de Mitterrand sur l’éducation."
-  },
-  {
-    "texte": "Les sanctions doivent tomber pour les chômeurs qui refusent un emploi.",
-    "auteur": "Manuel Valls",
-    "camp": "gauche",
-    "annee": "2015",
-    "contexte": "Déclaration pour justifier une politique plus stricte envers les demandeurs d’emploi."
-  },
-  {
-    "texte": "L’immigration zéro est un objectif souhaitable.",
-    "auteur": "Valéry Giscard d’Estaing",
-    "camp": "droite",
-    "annee": "1991",
-    "contexte": "Déclaration de Giscard sur la politique migratoire française."
-  },
-  {
-    "texte": "Il faut des quotas d’immigrés.",
-    "auteur": "François Hollande",
-    "camp": "gauche",
-    "annee": "2011",
-    "contexte": "Proposition de Hollande pour réguler l’immigration économique."
-  },
-  {
-    "texte": "La tolérance zéro doit s’appliquer aux délinquants.",
-    "auteur": "Nicolas Sarkozy",
-    "camp": "droite",
-    "annee": "2004",
-    "contexte": "Déclaration en tant que ministre de l’Intérieur dans le cadre de sa politique sécuritaire."
-  },
-  {
-    "texte": "On ne peut pas tout attendre de l’État.",
-    "auteur": "François Mitterrand",
+    "texte": "Il faut une autorité forte pour faire respecter la loi.",
+    "auteur": "Laurent Fabius",
     "camp": "gauche",
     "annee": "1984",
-    "contexte": "Phrase de Mitterrand incitant à la responsabilité individuelle et collective."
+    "contexte": "Alors Premier ministre, sur la nécessité de lutter contre l'insécurité."
   },
   {
-    "texte": "La République, c’est la fermeté.",
+    "texte": "Le travail, c'est la liberté.",
+    "auteur": "François Fillon",
+    "camp": "droite",
+    "annee": "2017",
+    "contexte": "Slogan de sa campagne présidentielle, reprenant une valeur traditionnelle de la droite."
+  },
+  {
+    "texte": "Ma vraie famille, c'est la nation.",
+    "auteur": "Jean-Luc Mélenchon",
+    "camp": "gauche",
+    "annee": "2017",
+    "contexte": "Déclaration lors d'un meeting, insistant sur l'unité du peuple par-delà les origines."
+  },
+  {
+    "texte": "L'immigration, ça doit être une chance pour la France.",
+    "auteur": "Nicolas Sarkozy",
+    "camp": "droite",
+    "annee": "2016",
+    "contexte": "Déclaration en tant que président des Républicains, appelant à une immigration choisie et intégrée."
+  },
+  {
+    "texte": "Il faut en finir avec la société du spectacle.",
     "auteur": "Ségolène Royal",
     "camp": "gauche",
     "annee": "2007",
-    "contexte": "Slogan récurrent de Royal lors de la présidentielle de 2007."
+    "contexte": "Critique de la superficialité médiatique pendant la campagne présidentielle."
   },
   {
-    "texte": "La prison est faite pour les voyous.",
-    "auteur": "Charles Pasqua",
+    "texte": "La justice sociale, c'est que chacun puisse bénéficier du fruit de son travail.",
+    "auteur": "Édouard Balladur",
     "camp": "droite",
-    "annee": "1986",
-    "contexte": "Déclaration choc de Pasqua dans le cadre de sa politique répressive."
+    "annee": "1995",
+    "contexte": "Définition d'une justice sociale libérale pendant la campagne présidentielle."
   },
   {
-    "texte": "Nous devons expulser plus efficacement.",
-    "auteur": "François Hollande",
-    "camp": "gauche",
-    "annee": "2012",
-    "contexte": "Déclaration de campagne sur la gestion des expulsions."
-  },
-  {
-    "texte": "L’immigration doit être choisie, pas subie.",
-    "auteur": "Nicolas Sarkozy",
-    "camp": "droite",
-    "annee": "2006",
-    "contexte": "Phrase clé de Sarkozy pour promouvoir l’immigration économique sélective."
-  },
-  {
-    "texte": "Il faut savoir contrôler les flux migratoires.",
-    "auteur": "Martine Aubry",
-    "camp": "gauche",
-    "annee": "2010",
-    "contexte": "Déclaration d’Aubry sur la régulation de l’immigration."
-  },
-  {
-    "texte": "La liberté ne peut pas être l’anarchie.",
+    "texte": "La patrie est une communauté de destin.",
     "auteur": "François Mitterrand",
     "camp": "gauche",
     "annee": "1981",
-    "contexte": "Discours de Mitterrand en tant que président sur l’importance de l’ordre public."
+    "contexte": "Discours d'investiture à la Présidence de la République."
   },
   {
-    "texte": "Nous devons rétablir l’ordre dans les quartiers.",
-    "auteur": "Nicolas Sarkozy",
+    "texte": "L'écologie n'est ni de droite ni de gauche.",
+    "auteur": "Nathalie Kosciusko-Morizet",
     "camp": "droite",
-    "annee": "2005",
-    "contexte": "Déclaration en pleine crise des banlieues et des émeutes urbaines."
+    "annee": "2011",
+    "contexte": "Alors ministre de l'Écologie, pour promouvoir une approche transversale de l'environnement."
   },
   {
-    "texte": "L’entreprise doit être au cœur de la société.",
-    "auteur": "Manuel Valls",
+    "texte": "Le courage, c'est de chercher la vérité et de la dire.",
+    "auteur": "Jean Jaurès",
     "camp": "gauche",
-    "annee": "2014",
-    "contexte": "Discours en faveur d’une politique économique tournée vers les entreprises."
+    "annee": "1903",
+    "contexte": "Discours à la jeunesse, une citation devenue iconique et reprise par tous bords."
   },
   {
-    "texte": "La sécurité, c’est la première exigence.",
+    "texte": "La France doit rester la France.",
     "auteur": "Lionel Jospin",
     "camp": "gauche",
-    "annee": "1998",
-    "contexte": "Phrase de Jospin pour répondre à la demande croissante de sécurité."
+    "annee": "1995",
+    "contexte": "Débat télévisé avec Jacques Chirac, évoquant l'identité nationale et l'intégration."
   },
   {
-    "texte": "Les voyous doivent avoir peur de la police.",
-    "auteur": "Nicolas Sarkozy",
-    "camp": "droite",
-    "annee": "2007",
-    "contexte": "Déclaration dans le cadre de sa politique sécuritaire musclée."
-  },
-  {
-    "texte": "Nous devons contrôler nos frontières.",
-    "auteur": "François Hollande",
+    "texte": "Il faut libérer les énergies et les initiatives.",
+    "auteur": "Michel Rocard",
     "camp": "gauche",
-    "annee": "2015",
-    "contexte": "Déclaration après les attentats terroristes de novembre 2015."
-  },
-  {
-    "texte": "L’assimilation est une condition pour être français.",
-    "auteur": "Nicolas Sarkozy",
-    "camp": "droite",
-    "annee": "2008",
-    "contexte": "Déclaration sur la politique d’intégration des immigrés."
-  },
-  {
-    "texte": "Le travail doit être remis au cœur des valeurs.",
-    "auteur": "Ségolène Royal",
+    "annee": "1988",
     "camp": "gauche",
-    "annee": "2007",
-    "contexte": "Proposition récurrente dans son programme présidentiel."
+    "contexte": "Premier ministre, prônant une forme de socialisme pragmatique et entrepreneurial."
   },
   {
-    "texte": "Nous devons expulser les clandestins.",
-    "auteur": "Charles Pasqua",
+    "texte": "La première des égalités, c'est l'égalité devant l'impôt.",
+    "auteur": "Alain Juppé",
     "camp": "droite",
     "annee": "1995",
-    "contexte": "Phrase choc de Pasqua sur la politique migratoire."
+    "contexte": "Défense d'une réforme fiscale visant à élargir l'assiette de l'impôt."
   },
   {
-    "texte": "Il n’y a pas de démocratie sans discipline.",
-    "auteur": "François Mitterrand",
-    "camp": "gauche",
-    "annee": "1960",
-    "contexte": "Citation issue d’un discours sur l’équilibre entre liberté et ordre."
-  },
-  {
-    "texte": "La République ne reculera jamais devant les voyous.",
-    "auteur": "Nicolas Sarkozy",
+    "texte": "Notre ennemi, c'est la finance.",
+    "auteur": "Emmanuel Macron",
     "camp": "droite",
-    "annee": "2006",
-    "contexte": "Discours en tant que ministre de l’Intérieur pour affirmer la fermeté de l’État."
+    "annee": "2016",
+    "contexte": "Lancement de son mouvement 'En Marche !', dans un registre volontairement transgressif."
   },
   {
-    "texte": "Il faut réhabiliter la valeur travail.",
-    "auteur": "François Hollande",
-    "camp": "gauche",
-    "annee": "2012",
-    "contexte": "Phrase de campagne présidentielle pour mettre en avant le travail comme valeur centrale."
-  },
-  {
-    "texte": "L’identité nationale doit être défendue.",
-    "auteur": "Nicolas Sarkozy",
+    "texte": "Le rôle de l'État n'est pas de faire le bonheur des hommes, mais de leur permettre de le faire eux-mêmes.",
+    "auteur": "Simone Veil",
     "camp": "droite",
-    "annee": "2009",
-    "contexte": "Déclaration dans le cadre du débat sur l’identité nationale."
+    "annee": "1978",
+    "contexte": "Défense d'une vision libérale et humaniste de l'action de l'État."
   },
   {
-    "texte": "La République doit être ferme face aux communautarismes.",
+    "texte": "Le peuple est notre seule légitimité.",
+    "auteur": "Marine Le Pen",
+    "camp": "droite",
+    "annee": "2017",
+    "contexte": "Débat présidentiel, revendiquant un lien direct avec les électeurs contre les élites."
+  },
+  {
+    "texte": "La laïcité est la condition de la paix civile.",
     "auteur": "Manuel Valls",
     "camp": "gauche",
     "annee": "2015",
-    "contexte": "Déclaration dans un discours sur la laïcité et l’unité républicaine."
+    "contexte": "Discours après les attentats, défendant une laïcité ferme et intransigeante."
   },
   {
-    "texte": "Nous devons punir plus sévèrement les récidivistes.",
+    "texte": "Il faut aimer la France.",
+    "auteur": "Jack Lang",
+    "camp": "gauche",
+    "annee": "1981",
+    "contexte": "Ministre de la Culture, appel à un patriotisme culturel et ouvert."
+  },
+  {
+    "texte": "La liberté d'entreprendre est une liberté fondamentale.",
+    "auteur": "Martine Aubry",
+    "camp": "gauche",
+    "annee": "2011",
+    "contexte": "Alors maire de Lille, discours sur la nécessité de soutenir les PME et les créateurs."
+  },
+  {
+    "texte": "La nation est le cadre irremplaçable de la solidarité.",
+    "auteur": "Jean-Pierre Chevènement",
+    "camp": "gauche",
+    "annee": "2000",
+    "contexte": "Ministre de l'Intérieur, défense d'un républicanisme souverainiste."
+  },
+  {
+    "texte": "Il n'y a pas de liberté sans responsabilité.",
+    "auteur": "François Bayrou",
+    "camp": "droite",
+    "annee": "2007",
+    "contexte": "Campagne présidentielle, promouvant une 'démocratie responsable'."
+  },
+  {
+    "texte": "L'ordre républicain doit prévaloir.",
+    "auteur": "Manuel Valls",
+    "camp": "gauche",
+    "annee": "2016",
+    "contexte": "Déclaration en tant que Premier ministre lors de manifestations contre la loi travail."
+  },
+  {
+    "texte": "La valeur travail est au cœur de notre projet.",
+    "auteur": "Édouard Philippe",
+    "camp": "droite",
+    "annee": "2017",
+    "contexte": "Discours de politique générale en tant que Premier ministre."
+  },
+  {
+    "texte": "La France a une histoire, une culture, une langue. Cela s'appelle une identité.",
+    "auteur": "Jack Lang",
+    "camp": "gauche",
+    "annee": "1984",
+    "contexte": "Ministre de la Culture, défendant l'exception culturelle française."
+  },
+  {
+    "texte": "La rupture, c'est avec les habitudes du passé.",
     "auteur": "Nicolas Sarkozy",
     "camp": "droite",
     "annee": "2007",
-    "contexte": "Annonce de mesures sécuritaires renforcées contre la récidive."
+    "contexte": "Slogan de campagne pour incarner le changement et la modernité."
   },
   {
-    "texte": "La France ne peut pas accueillir davantage d’immigrés.",
+    "texte": "L'égalité des chances est le fondement de la République.",
+    "auteur": "Najat Vallaud-Belkacem",
+    "camp": "gauche",
+    "annee": "2014",
+    "contexte": "Ministre de l'Éducation, présentant la réforme de l'éducation prioritaire."
+  },
+  {
+    "texte": "Il faut récompenser le mérite et le talent.",
+    "auteur": "Jacques Chirac",
+    "camp": "droite",
+    "annee": "1995",
+    "contexte": "Discours sur la fracture sociale et la nécessité de promouvoir l'élite républicaine."
+  },
+  {
+    "texte": "La transformation écologique est la grande cause du siècle.",
+    "auteur": "Emmanuel Macron",
+    "camp": "droite",
+    "annee": "2020",
+    "contexte": "Announcement des conclusions de la Convention Citoyenne pour le Climat."
+  },
+  {
+    "texte": "La sécurité est la première des libertés.",
+    "auteur": "Gérard Collomb",
+    "camp": "gauche",
+    "annee": "2017",
+    "contexte": "Ministre de l'Intérieur, justifiant la priorité donnée à la lutte contre l'insécurité."
+  },
+  {
+    "texte": "Il faut en finir avec l'assistanat.",
+    "auteur": "Benoît Hamon",
+    "camp": "gauche",
+    "annee": "2017",
+    "contexte": "Proposition de création d'un revenu universel pour libérer du travail contraint."
+  },
+  {
+    "texte": "La France doit prendre sa part de responsabilité dans le monde.",
+    "auteur": "Alain Juppé",
+    "camp": "droite",
+    "annee": "2011",
+    "contexte": "Ministre des Affaires étrangères, défendant une politique étrangère interventionniste et morale."
+  },
+  {
+    "texte": "L'école de la République doit transmettre le goût de l'effort.",
+    "auteur": "Vincent Peillon",
+    "camp": "gauche",
+    "annee": "2012",
+    "contexte": "Ministre de l'Éducation, présentant la refondation de l'école."
+  },
+  {
+    "texte": "Notre modèle social est un trésor, mais il faut le réformer pour le sauver.",
     "auteur": "François Hollande",
     "camp": "gauche",
     "annee": "2013",
-    "contexte": "Déclaration sur les limites de la politique d’accueil."
+    "contexte": "Discours sur la nécessité de réformer les retraites et l'assurance chômage."
   },
   {
-    "texte": "Il faut nettoyer les cités au Kärcher.",
+    "texte": "La ruralité est l'âme de notre pays.",
+    "auteur": "Dominique de Villepin",
+    "camp": "droite",
+    "annee": "2006",
+    "contexte": "Premier ministre, en déplacement dans une zone rurale pour défendre les services publics."
+  },
+  {
+    "texte": "L'innovation et le progrès technologique sont nos meilleurs atouts.",
+    "auteur": "Arnaud Montebourg",
+    "camp": "gauche",
+    "annee": "2012",
+    "contexte": "Ministre du Redressement productif, promouvant la 'nouvelle France industrielle'."
+  },
+  {
+    "texte": "L'unité nationale est notre bien le plus précieux.",
+    "auteur": "Jean Castex",
+    "camp": "droite",
+    "annee": "2020",
+    "contexte": "Discours pendant la crise du COVID-19 pour appeler au civisme et à la solidarité."
+  },
+  {
+    "texte": "La justice fiscale, c'est que chacun contribue selon ses moyens.",
+    "auteur": "Valérie Pécresse",
+    "camp": "droite",
+    "annee": "2021",
+    "contexte": "Candidature à la primaire de la droite, défendant un impôt juste mais moins lourd."
+  },
+  {
+    "texte": "Le courage, c'est de transformer l'essai.",
+    "auteur": "Michel Rocard",
+    "camp": "gauche",
+    "annee": "1988",
+    "contexte": "Premier ministre, appelant à poursuivre les réformes après la réélection de Mitterrand."
+  },
+  {
+    "texte": "La souveraineté alimentaire de la France est non-négociable.",
+    "auteur": "Julien Denormandie",
+    "camp": "droite",
+    "annee": "2020",
+    "contexte": "Ministre de l'Agriculture, en réponse aux tensions sur les chaînes d'approvisionnement."
+  },
+  {
+    "texte": "L'ascenseur social est en panne. Il faut le réparer.",
+    "auteur": "Jean-François Copé",
+    "camp": "droite",
+    "annee": "2012",
+    "contexte": "Président de l'UMP, sur la nécessité de promouvoir l'égalité des chances par le mérite."
+  },
+  {
+    "texte": "La laïcité n'est pas une opinion, c'est la liberté d'en avoir une.",
+    "auteur": "Robert Badinter",
+    "camp": "gauche",
+    "annee": "1989",
+    "contexte": "Défense de la loi sur les signes religieux à l'école, après l'affaire de Creil."
+  },
+  {
+    "texte": "La nation est le cadre de notre destin commun.",
+    "auteur": "Laurent Fabius",
+    "camp": "gauche",
+    "annee": "1985",
+    "contexte": "Discours sur l'Europe et la souveraineté nationale."
+  },
+  {
+    "texte": "Le travail est la clé de l'intégration et de la dignité.",
+    "auteur": "Jacques Chirac",
+    "camp": "droite",
+    "annee": "1995",
+    "contexte": "Discours sur la fracture sociale et l'exclusion."
+  },
+  {
+    "texte": "L'ordre juste, c'est l'ordre républicain.",
+    "auteur": "Jean-Pierre Chevènement",
+    "camp": "gauche",
+    "annee": "1998",
+    "contexte": "Ministre de l'Intérieur, sur le maintien de l'ordre public."
+  },
+  {
+    "texte": "L'école doit transmettre l'amour de l'effort et du mérite.",
+    "auteur": "François Fillon",
+    "camp": "droite",
+    "annee": "2006",
+    "contexte": "Ministre de l'Éducation, défendant une réforme de l'école."
+  },
+  {
+    "texte": "Notre devoir est de protéger les plus faibles.",
+    "auteur": "Martine Aubry",
+    "camp": "gauche",
+    "annee": "2010",
+    "contexte": "Défense du RSA et des minima sociaux."
+  },
+  {
+    "texte": "La liberté d'entreprendre est le moteur de la prospérité.",
+    "auteur": "Alain Madelin",
+    "camp": "droite",
+    "annee": "1995",
+    "contexte": "Ministre de l'Économie, plaidoyer pour le libéralisme économique."
+  },
+  {
+    "texte": "La laïcité est le ciment de notre unité nationale.",
+    "auteur": "Bernard Cazeneuve",
+    "camp": "gauche",
+    "annee": "2016",
+    "contexte": "Ministre de l'Intérieur, après des attentats."
+  },
+  {
+    "texte": "Il faut aimer son pays pour le faire progresser.",
+    "auteur": "Ségolène Royal",
+    "camp": "gauche",
+    "annee": "2007",
+    "contexte": "Campagne présidentielle, appel au patriotisme."
+  },
+  {
+    "texte": "La responsabilité individuelle est la contrepartie de la liberté.",
+    "auteur": "Jean-François Copé",
+    "camp": "droite",
+    "annee": "2012",
+    "contexte": "Défense d'une politique de responsabilisation des citoyens."
+  },
+  {
+    "texte": "L'autorité de l'État doit être respectée.",
+    "auteur": "Manuel Valls",
+    "camp": "gauche",
+    "annee": "2014",
+    "contexte": "Premier ministre, à la suite de mouvements de contestation."
+  },
+  {
+    "texte": "La famille reste la cellule de base de notre société.",
+    "auteur": "Christiane Taubira",
+    "camp": "gauche",
+    "annee": "2013",
+    "contexte": "Défense du mariage pour tous, en reconnaissant la valeur de la famille."
+  },
+  {
+    "texte": "Le goût de l'effort doit être réappris.",
     "auteur": "Nicolas Sarkozy",
     "camp": "droite",
+    "annee": "2007",
+    "contexte": "Campagne présidentielle, sur les valeurs du travail."
+  },
+  {
+    "texte": "La justice sociale est une exigence républicaine.",
+    "auteur": "François Hollande",
+    "camp": "gauche",
+    "annee": "2012",
+    "contexte": "Discours d'investiture à la présidence."
+  },
+  {
+    "texte": "La sécurité est un droit fondamental.",
+    "auteur": "Gérard Longuet",
+    "camp": "droite",
+    "annee": "2011",
+    "contexte": "Ministre de la Défense, sur la sécurité nationale."
+  },
+  {
+    "texte": "La culture est ce qui nous rassemble.",
+    "auteur": "Jack Lang",
+    "camp": "gauche",
+    "annee": "1991",
+    "contexte": "Ministre de la Culture, sur le rôle fédérateur de la culture."
+  },
+  {
+    "texte": "L'identité nationale n'est pas un gros mot.",
+    "auteur": "Jean-Marc Ayrault",
+    "camp": "gauche",
+    "annee": "2012",
+    "contexte": "Premier ministre, en ouverture d'un débat sur l'identité."
+  },
+  {
+    "texte": "Le mérite doit être récompensé.",
+    "auteur": "Valérie Pécresse",
+    "camp": "droite",
+    "annee": "2016",
+    "contexte": "Présidente de la région Île-de-France, sur la bourse au mérite."
+  },
+  {
+    "texte": "La République doit être ferme.",
+    "auteur": "Michel Sapin",
+    "camp": "gauche",
+    "annee": "2015",
+    "contexte": "Ministre des Finances, sur la lutte contre la fraude fiscale."
+  },
+  {
+    "texte": "La défense de notre patrimoine est un devoir.",
+    "auteur": "Franck Riester",
+    "camp": "droite",
+    "annee": "2019",
+    "contexte": "Ministre de la Culture, après l'incendie de Notre-Dame."
+  },
+  {
+    "texte": "L'égalité des chances est une promesse républicaine.",
+    "auteur": "Najat Vallaud-Belkacem",
+    "camp": "gauche",
+    "annee": "2015",
+    "contexte": "Ministre de l'Éducation, sur la réforme du collège."
+  },
+  {
+    "texte": "L'ordre républicain n'est pas négociable.",
+    "auteur": "Lionel Jospin",
+    "camp": "gauche",
+    "annee": "1999",
+    "contexte": "Premier ministre, à propos du maintien de l'ordre lors de manifestations."
+  },
+  {
+    "texte": "La solidarité nationale est notre boussole.",
+    "auteur": "Nicolas Sarkozy",
+    "camp": "droite",
+    "annee": "2008",
+    "contexte": "Président de la République, pendant la crise financière mondiale."
+  },
+  {
+    "texte": "L'État doit être stratège et efficace.",
+    "auteur": "Michel Rocard",
+    "camp": "gauche",
+    "annee": "1989",
+    "contexte": "Premier ministre, défendant une modernisation de l'administration."
+  },
+  {
+    "texte": "Le premier devoir de l'État est de protéger les Français.",
+    "auteur": "Gérard Larcher",
+    "camp": "droite",
+    "annee": "2016",
+    "contexte": "Président du Sénat, après une série d'attentats."
+  },
+  {
+    "texte": "La méritocratie est l'idéal de la République.",
+    "auteur": "Vincent Peillon",
+    "camp": "gauche",
+    "annee": "2013",
+    "contexte": "Ministre de l'Éducation, sur la refondation de l'école."
+  },
+  {
+    "texte": "Notre modèle social est une force qu'il faut moderniser.",
+    "auteur": "Édouard Balladur",
+    "camp": "droite",
+    "annee": "1994",
+    "contexte": "Premier ministre, présentant le plan Juppé pour la Sécurité sociale."
+  },
+  {
+    "texte": "La laïcité garantit la paix des esprits.",
+    "auteur": "Jean-Pierre Raffarin",
+    "camp": "droite",
+    "annee": "2003",
+    "contexte": "Premier ministre, lors du débat sur la loi sur les signes religieux."
+  },
+  {
+    "texte": "La puissance publique doit investir pour l'avenir.",
+    "auteur": "Arnaud Montebourg",
+    "camp": "gauche",
+    "annee": "2013",
+    "contexte": "Ministre du Redressement productif, lançant des plans pour relancer l'industrie."
+  },
+  {
+    "texte": "La famille est le socle de la société.",
+    "auteur": "Élisabeth Guigou",
+    "camp": "gauche",
+    "annee": "1998",
+    "contexte": "Garde des Sceaux, défendant la réforme du droit de la famille."
+  },
+  {
+    "texte": "L'ambition pour notre pays est mon moteur.",
+    "auteur": "Alain Juppé",
+    "camp": "droite",
+    "annee": "2016",
+    "contexte": "Campagne pour la primaire de la droite, appel à un sursaut national."
+  },
+  {
+    "texte": "La fraternité n'est pas un vain mot.",
+    "auteur": "Xavier Bertrand",
+    "camp": "droite",
+    "annee": "2021",
+    "contexte": "Président de la région Hauts-de-France, sur la cohésion sociale."
+  },
+  {
+    "texte": "L'innovation est une politique de gauche.",
+    "auteur": "Benoît Hamon",
+    "camp": "gauche",
+    "annee": "2017",
+    "contexte": "Campagne présidentielle, plaidoyer pour une économie du savoir et de l'innovation."
+  },
+  {
+    "texte": "La discipline budgétaire est nécessaire pour investir.",
+    "auteur": "Manuel Valls",
+    "camp": "gauche",
+    "annee": "2014",
+    "contexte": "Premier ministre, justifiant une politique de rigueur pour respecter les engagements européens."
+  },
+  {
+    "texte": "La culture de l'effort doit être réhabilitée.",
+    "auteur": "Luc Ferry",
+    "camp": "droite",
+    "annee": "2003",
+    "contexte": "Ministre de l'Éducation, sur la réforme du système éducatif."
+  },
+  {
+    "texte": "Protéger les plus vulnérables est la raison d'être de la politique.",
+    "auteur": "Roselyne Bachelot",
+    "camp": "droite",
+    "annee": "2010",
+    "contexte": "Ministre des Solidarités, défendant les budgets sociaux en période de crise."
+  },
+  {
+    "texte": "La souveraineté populaire est la clé de voûte de notre démocratie.",
+    "auteur": "Jean-Luc Mélenchon",
+    "camp": "gauche",
+    "annee": "2016",
+    "contexte": "Défense du référendum d'initiative citoyenne (RIC)."
+  },
+  {
+    "texte": "L'équilibre des finances publiques est une condition de la justice sociale.",
+    "auteur": "Laurent Fabius",
+    "camp": "gauche",
+    "annee": "1984",
+    "contexte": "Premier ministre, justifiant une politique de rigueur économique."
+  },
+  {
+    "texte": "L'amour de la France est un sentiment partagé par tous.",
+    "auteur": "François Rebsamen",
+    "camp": "gauche",
+    "annee": "2015",
+    "contexte": "Ministre du Travail, en réaction à des polémiques sur l'identité nationale."
+  },
+  {
+    "texte": "La liberté commence par la sécurité.",
+    "auteur": "Christophe Castaner",
+    "camp": "gauche",
+    "annee": "2019",
+    "contexte": "Ministre de l'Intérieur, présentant une loi contre les violences en marge des manifestations."
+  },
+  {
+    "texte": "Notre destin est entre nos mains.",
+    "auteur": "Dominique de Villepin",
+    "camp": "droite",
     "annee": "2005",
-    "contexte": "Phrase choc prononcée lors d’une visite à Argenteuil après des violences urbaines."
+    "contexte": "Premier ministre, s'opposant à la guerre en Irak aux Nations Unies."
   }
 ]
-
