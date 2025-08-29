@@ -11,36 +11,30 @@ const socket = io();
 function App() {
   const [players, setPlayers] = useState([]);
   const [roomId, setRoomId] = useState(null);
-  const [isMaster, setIsMaster] = useState(false);
+  const [masterId, setMasterId] = useState(null);
   const [countdown, setCountdown] = useState(null);
-  const [currentView, setCurrentView] = useState("form"); // form, waiting, countdown, game
+  const [currentView, setCurrentView] = useState("form");
   const [citation, setCitation] = useState(null);
   const [result, setResult] = useState(null);
   const [context, setContext] = useState(false);
+  const [avatars, setAvatars] = useState([]);
 
   useEffect(() => {
     socket.on("send roomId", (id) => setRoomId(id));
-    socket.on("send masterToken", () => setIsMaster(true));
+    socket.on("send masterId", (id) => setMasterId(id));
     socket.on("send players", (updatedPlayers) => setPlayers(updatedPlayers));
     socket.on("waiting players", () => setCurrentView("waiting"));
-    socket.on("send countdown", (tick) => {
-      setCountdown(tick);
-      setCurrentView("countdown");
-    });
+    socket.on("send countdown", () => setCurrentView("countdown"));
+    socket.on("send tick", (tick) => setCountdown(tick));
+    socket.on("show answer", (result) => setResult(result));
+    socket.on("show context", () => setContext(true));
+    socket.on("end game", () => setCurrentView("endgame"));
+    socket.on("send avatars", (avatarList) => setAvatars(avatarList));
     socket.on("send citation", (citationData) => {
       setCitation(citationData);
       setResult(null);
       setContext(false);
       setCurrentView("game");
-    });
-    socket.on("show answer", (result) => {
-      setResult(result);
-    });
-    socket.on("show context", () => {
-      setContext(true);
-    });
-    socket.on("end game", () => {
-      setCurrentView("endgame");
     });
 
     return () => {
@@ -49,8 +43,12 @@ function App() {
       socket.off("send players");
       socket.off("waiting players");
       socket.off("send countdown");
+      socket.off("send tick");
       socket.off("udpate citation");
       socket.off("show answer");
+      socket.off("show context");
+      socket.off("end game");
+      socket.off("send avatars");
     };
   }, []);
 
@@ -79,7 +77,11 @@ function App() {
   };
 
   const handleRelaunchGame = () => {
-    socket.emit("relaunch game", roomId); // Server should reset the game
+    socket.emit("relaunch game", roomId);
+  };
+
+  const handlePickAvatar = (avatarPath) => {
+    socket.emit("pick avatar", roomId, avatarPath);
   };
 
   if (currentView === "form") {
@@ -91,8 +93,10 @@ function App() {
       <WaitingRoom
         roomId={roomId}
         players={players}
-        isMaster={isMaster}
+        isMaster={socket.id === masterId}
+        avatarList={avatars}
         onLaunch={handleLaunchGame}
+        onPickAvatar={handlePickAvatar}
       />
     );
   }
@@ -108,7 +112,7 @@ function App() {
         players={players}
         answer={result}
         showContext={context}
-        isMaster={isMaster}
+        isMaster={socket.id === masterId}
         onVoteLeft={handleVoteLeft}
         onVoteRight={handleVoteRight}
         onNextRound={handleNextRound}
@@ -120,7 +124,7 @@ function App() {
     return (
       <EndGame
         players={players}
-        isMaster={isMaster}
+        isMaster={socket.id === masterId}
         onRelaunch={handleRelaunchGame}
       />
     );

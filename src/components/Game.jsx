@@ -13,7 +13,7 @@ const Game = ({
       <div
         className={`citationContainer${answer === null ? "" : answer ? " correct" : " incorrect"}`}
       >
-        <h2 className="citationText">{citation?.texte || "Citation..."}</h2>
+        <h2 className="citationText">"{citation?.texte || "Citation..."}"</h2>
         <h4>{answer === null || citation.auteur}</h4>
         <p>{showContext ? citation.contexte : ""}</p>
       </div>
@@ -34,6 +34,7 @@ const Game = ({
         <ul>
           {players.map((p) => (
             <li key={p.id}>
+              <img src={p.avatar}></img>
               <span>{p.name}</span>
               <span>{p.score || 0} pts</span>
             </li>

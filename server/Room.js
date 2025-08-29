@@ -1,20 +1,21 @@
 import WaitingState from "./states/WaitingState.js";
-import PlayingState from "./states/PlayingState.js";
+import CountdownState from "./states/CountdownState.js";
 import FinishedState from "./states/FinishedState.js";
 
 export default class Room {
-  constructor(masterSocket, masterName, ioInstance, citations) {
+  constructor(masterId, masterName, ioInstance, citations, avatars) {
     this.io = ioInstance;
     this.currentState = new WaitingState(this);
     this.roomId = Math.random().toString(36).substr(2, 6);
-    this.masterId = masterSocket.id;
+    this.masterId = masterId;
     this.players = [];
     this.currentRound = 0;
     this.currentCitation = null;
-    this.maxRound = 1;
+    this.maxRound = 5;
     this.citations = citations;
     this.currentState.onEnter();
-    this.join(masterSocket, masterName);
+    this.avatars = avatars;
+    this.join(masterId, masterName);
   }
 
   changeState(newState) {
@@ -33,25 +34,31 @@ export default class Room {
     this.currentCitation = currentCitation;
   }
 
-  vote(socket, vote) {
-    this.currentState.handleVote(socket, vote);
+  vote(socketId, vote) {
+    this.currentState.handleVote(socketId, vote);
   }
 
-  join(socket, playerName) {
-    let player = { id: socket.id, name: playerName, score: 0, hasVoted: false };
-    this.currentState.handleJoin(socket, player);
+  join(socketId, playerName) {
+    let player = {
+      id: socketId,
+      avatar: null,
+      name: playerName,
+      score: 0,
+      hasVoted: false,
+    };
+    this.currentState.handleJoin(socketId, player);
   }
 
   next() {
     if (this.currentRound < this.maxRound) {
-      this.changeState(new PlayingState(this));
+      this.changeState(new CountdownState(this));
     } else {
       this.changeState(new FinishedState(this));
     }
   }
 
-  checkVote(socket, vote, startTime) {
-    const player = this.players.find((e) => e.id === socket.id);
+  checkVote(socketId, vote, startTime) {
+    const player = this.players.find((player) => player.id === socketId);
     if (!player || player.hasVoted) return;
     const result = vote === this.currentCitation.camp;
     if (result) {
@@ -60,14 +67,14 @@ export default class Room {
       player.score += scoreEarned;
     }
     player.hasVoted = true;
-    socket.emit("show answer", result);
+    this.io.to(socketId).emit("show answer", result);
   }
 
   relaunchGame() {
     this.currentRound = 0;
     this.players.forEach((player) => (player.score = 0));
     this.broadcastPlayers();
-    this.changeState(new PlayingState(this));
+    this.changeState(new CountdownState(this));
   }
 
   everyoneVoted() {
@@ -82,30 +89,44 @@ export default class Room {
     this.currentState.handleDisconnect(socketId);
   }
 
-  broadcastWaiting(socket) {
-    socket.emit("waiting players");
-  }
-
-  broadcastRoomId(socket) {
-    socket.emit("send roomId", this.roomId);
-  }
-
-  broadcastMasterToken(socket) {
-    if (this.masterId == socket.id) {
-      socket.emit("send masterToken", this.masterId);
+  setPlayerAvatar(socketId, avatarPath) {
+    const player = this.players.find((p) => p.id === socketId);
+    if (player) {
+      player.avatar = avatarPath;
+      this.broadcastPlayers();
     }
+  }
+
+  broadcastWaiting(socketId) {
+    this.io.to(socketId).emit("waiting players");
+  }
+
+  broadcastRoomId(socketId) {
+    this.io.to(socketId).emit("send roomId", this.roomId);
+  }
+
+  broadcastAvatars(socketId) {
+    this.io.to(socketId).emit("send avatars", this.avatars);
+  }
+
+  broadcastMasterId() {
+    this.io.to(this.roomId).emit("send masterId", this.masterId);
   }
 
   broadcastCitation() {
     this.io.to(this.roomId).emit("send citation", this.currentCitation);
   }
 
-  broadcastPlayers() {
-    this.io.to(this.roomId).emit("send players", this.players);
+  broadcastCountdown() {
+    this.io.to(this.roomId).emit("send countdown");
   }
 
-  broadcastCountdown(tick) {
-    this.io.to(this.roomId).emit("send countdown", tick);
+  broadcastTick(tick) {
+    this.io.to(this.roomId).emit("send tick", tick);
+  }
+
+  broadcastPlayers() {
+    this.io.to(this.roomId).emit("send players", this.players);
   }
 
   broadcastContext() {

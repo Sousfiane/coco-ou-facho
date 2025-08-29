@@ -13,12 +13,12 @@ export default class RoomState {
       `Room #${this.room.roomId}: Can't start, the game is already started`,
     );
   }
-  handleJoin(socket, player) {
+  handleJoin(socketId, player) {
     console.log(
-      `Room #${this.room.roomId}: ${socket.id} tried to join the room but the game already started`,
+      `Room #${this.room.roomId}: ${socketId} tried to join the room but the game already started`,
     );
   }
-  handleVote(socket, vote) {
+  handleVote(socketId, vote) {
     console.log(`Room #${this.room.roomId}: Can't vote yet`);
   }
   handleDisconnect(socketId) {
@@ -27,7 +27,7 @@ export default class RoomState {
     );
     if (socketId === this.room.masterId && this.room.players.length !== 0) {
       this.room.masterId = this.room.players[0].id;
-      this.room.io.to(this.masterId).emit("send masterToken", this.masterId);
+      this.room.broacastMasterId();
     }
     this.room.broadcastPlayers();
   }

@@ -88,20 +88,21 @@ button:hover {
     background: #357ab8;
 }
 
+
 .leftButton {
-    background: #27ae60;
-}
-
-.leftButton:hover {
-    background: #1e874b;
-}
-
-.rightButton {
     background: #e74c3c;
 }
 
-.rightButton:hover {
+.leftButton:hover {
     background: #c0392b;
+}
+
+.rightButton {
+    background: #000000;
+}
+
+.rightButton:hover {
+    background: #383838;
 }
 
 .correct {
@@ -123,6 +124,7 @@ button:hover {
     margin-bottom: 1.5rem;
     font-size: 1.2rem;
     font-weight: bold;
+    font-style: italic;
 }
 
 .buttons {
