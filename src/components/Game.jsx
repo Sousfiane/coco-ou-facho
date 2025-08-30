@@ -1,3 +1,4 @@
+import Scoreboard from "./Scoreboard";
 const Game = ({
   citation,
   players,
@@ -28,20 +29,7 @@ const Game = ({
         </div>
       )}
 
-      {/* Players and Scores */}
-      <div>
-        <h3>Joueurs</h3>
-        <ul>
-          {players.map((p) => (
-            <li key={p.id}>
-              <img src={p.avatar}></img>
-              <span>{p.name}</span>
-              <span>{p.score || 0} pts</span>
-            </li>
-          ))}
-        </ul>
-      </div>
-
+      <Scoreboard players={players} />
       {showContext && isMaster && (
         <div className="">
           <button onClick={onNextRound}>Round suivant</button>

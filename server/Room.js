@@ -12,10 +12,15 @@ export default class Room {
     this.currentRound = 0;
     this.currentCitation = null;
     this.maxRound = 5;
+    this.maxPlayer = 5;
     this.citations = citations;
     this.currentState.onEnter();
     this.avatars = avatars;
     this.join(masterId, masterName);
+  }
+
+  isEmpty() {
+    return this.players.length === 0;
   }
 
   changeState(newState) {
@@ -39,14 +44,16 @@ export default class Room {
   }
 
   join(socketId, playerName) {
-    let player = {
-      id: socketId,
-      avatar: null,
-      name: playerName,
-      score: 0,
-      hasVoted: false,
-    };
-    this.currentState.handleJoin(socketId, player);
+    if (this.maxPlayer > this.players.length) {
+      let player = {
+        id: socketId,
+        avatar: "/avatars/placeholder.png",
+        name: playerName,
+        score: 0,
+        hasVoted: false,
+      };
+      this.currentState.handleJoin(socketId, player);
+    }
   }
 
   next() {
@@ -90,7 +97,7 @@ export default class Room {
   }
 
   setPlayerAvatar(socketId, avatarPath) {
-    const player = this.players.find((p) => p.id === socketId);
+    const player = this.players.find((player) => player.id === socketId);
     if (player) {
       player.avatar = avatarPath;
       this.broadcastPlayers();

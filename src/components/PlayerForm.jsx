@@ -15,6 +15,7 @@ const PlayerForm = ({ onCreate, onJoin }) => {
     const sanitizedName = DOMPurify.sanitize(name);
     const sanitizedRoom = DOMPurify.sanitize(room);
     if (!sanitizedName) return alert("Enter a username");
+    if (!sanitizedRoom) return alert("Enter a Room");
     onJoin(sanitizedName, sanitizedRoom);
   };
 

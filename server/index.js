@@ -26,7 +26,9 @@ const rooms = {};
 const citations = require("../data/citations.json");
 const avatarDir = path.join(process.cwd(), "avatars/");
 const files = readdirSync(avatarDir);
-const avatars = files.map((file) => `/avatars/${file}`);
+const avatars = files
+  .filter((file) => file !== "placeholder.png")
+  .map((file) => `/avatars/${file}`);
 
 io.on("connection", (socket) => {
   console.log("New client connected:", socket.id);
@@ -38,34 +40,51 @@ io.on("connection", (socket) => {
   });
 
   socket.on("join room", (playerName, roomId) => {
-    socket.roomId = roomId;
-    rooms[roomId].join(socket.id, playerName);
+    if (rooms[roomId]) {
+      socket.roomId = roomId;
+      rooms[roomId].join(socket.id, playerName);
+    }
   });
 
   socket.on("launch game", (roomId) => {
-    rooms[roomId].startGame();
+    if (rooms[roomId]) {
+      rooms[roomId].startGame();
+    }
   });
 
   socket.on("send vote", (roomId, vote) => {
-    rooms[roomId].vote(socket.id, vote);
+    if (rooms[roomId]) {
+      rooms[roomId].vote(socket.id, vote);
+    }
   });
 
   socket.on("pick avatar", (roomId, avatarPath) => {
-    rooms[roomId].setPlayerAvatar(socket.id, avatarPath);
+    if (rooms[roomId]) {
+      rooms[roomId].setPlayerAvatar(socket.id, avatarPath);
+    }
   });
 
   socket.on("next round", (roomId) => {
-    rooms[roomId].next();
+    if (rooms[roomId]) {
+      rooms[roomId].next();
+    }
   });
 
   socket.on("relaunch game", (roomId) => {
-    rooms[roomId].relaunchGame();
+    if (rooms[roomId]) {
+      rooms[roomId].relaunchGame();
+    }
   });
 
   socket.on("disconnect", () => {
     console.log("client disconnected:", socket.id);
-    if (socket.roomId) {
-      rooms[socket.roomId].playerDisconnect(socket.id);
+    let roomId = socket.roomId;
+    if (roomId && rooms[roomId]) {
+      rooms[roomId].playerDisconnect(socket.id);
+      if (rooms[roomId].isEmpty()) {
+        console.log(`Room #${roomId} is Empty : Cleanup...`);
+        delete rooms[roomId];
+      }
     }
   });
 });

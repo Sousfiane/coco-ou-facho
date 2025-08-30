@@ -1,3 +1,4 @@
+import Scoreboard from "./Scoreboard";
 const WaitingRoom = ({
   roomId,
   players,
@@ -12,18 +13,8 @@ const WaitingRoom = ({
   return (
     <div className="card">
       <h2>Room #{roomId}</h2>
-      <ul>
-        {players.map((p) => (
-          <li key={p.id}>
-            <div>
-              <img src={p.avatar || "null"}></img>
-              <span>{p.name}</span>
-            </div>
-          </li>
-        ))}
-      </ul>
-
-      <div>
+      <Scoreboard players={players} waiting={true} />
+      <div className="avatarPicker">
         {avatarList.map((avatarPath) => (
           <img
             onClick={() => handlePickAvatar(avatarPath)}

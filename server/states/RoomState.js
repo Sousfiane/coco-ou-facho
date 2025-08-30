@@ -27,7 +27,7 @@ export default class RoomState {
     );
     if (socketId === this.room.masterId && this.room.players.length !== 0) {
       this.room.masterId = this.room.players[0].id;
-      this.room.broacastMasterId();
+      this.room.broadcastMasterId();
     }
     this.room.broadcastPlayers();
   }
