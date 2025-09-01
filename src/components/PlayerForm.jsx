@@ -1,5 +1,8 @@
 import { useState } from "react";
 import DOMPurify from "dompurify";
+import Button from "./Button";
+import Input from "./Input";
+import Title from "./Title";
 
 const PlayerForm = ({ onCreate, onJoin }) => {
   const [name, setName] = useState("");
@@ -20,21 +23,23 @@ const PlayerForm = ({ onCreate, onJoin }) => {
   };
 
   return (
-    <div className="card">
-      <h2>Créer ou rejoindre une partie</h2>
-      <input
-        placeholder="Votre pseudo"
+    <div className="rounded-md shadow-xl max-w-xl w-full p-4 h-full">
+      <Title children={"Créer ou rejoindre une partie"} />
+      <Input
         value={name}
         onChange={(e) => setName(e.target.value)}
+        placeholder="Votre pseudo"
       />
-      <input
-        placeholder="ID de la salle"
+
+      <Input
         value={room}
         onChange={(e) => setRoom(e.target.value)}
+        placeholder="ID de la salle"
       />
-      <div className="buttons">
-        <button onClick={handleCreate}>Créer une salle</button>
-        <button onClick={handleJoin}>Rejoindre</button>
+
+      <div className="flex gap-2 mt-4">
+        <Button onClick={handleCreate}>Créer une Salle</Button>
+        <Button onClick={handleJoin}>Rejoindre une Salle</Button>
       </div>
     </div>
   );

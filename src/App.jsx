@@ -15,7 +15,7 @@ function App() {
   const [countdown, setCountdown] = useState(null);
   const [currentView, setCurrentView] = useState("form");
   const [citation, setCitation] = useState(null);
-  const [result, setResult] = useState(null);
+  const [result, setResult] = useState(false);
   const [context, setContext] = useState(false);
   const [avatars, setAvatars] = useState([]);
 
@@ -23,16 +23,16 @@ function App() {
     socket.on("send roomId", (id) => setRoomId(id));
     socket.on("send masterId", (id) => setMasterId(id));
     socket.on("send players", (updatedPlayers) => setPlayers(updatedPlayers));
+    socket.on("send tick", (tick) => setCountdown(tick));
     socket.on("waiting players", () => setCurrentView("waiting"));
     socket.on("send countdown", () => setCurrentView("countdown"));
-    socket.on("send tick", (tick) => setCountdown(tick));
-    socket.on("show answer", (result) => setResult(result));
+    socket.on("show answer", () => setResult(true));
     socket.on("show context", () => setContext(true));
     socket.on("end game", () => setCurrentView("endgame"));
     socket.on("send avatars", (avatarList) => setAvatars(avatarList));
     socket.on("send citation", (citationData) => {
       setCitation(citationData);
-      setResult(null);
+      setResult(false);
       setContext(false);
       setCurrentView("game");
     });
@@ -110,7 +110,7 @@ function App() {
       <Game
         citation={citation}
         players={players}
-        answer={result}
+        showAnswer={result}
         showContext={context}
         isMaster={socket.id === masterId}
         onVoteLeft={handleVoteLeft}

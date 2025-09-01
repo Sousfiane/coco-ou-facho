@@ -74,7 +74,7 @@ export default class Room {
       player.score += scoreEarned;
     }
     player.hasVoted = true;
-    this.io.to(socketId).emit("show answer", result);
+    this.io.to(socketId).emit("show answer");
   }
 
   relaunchGame() {

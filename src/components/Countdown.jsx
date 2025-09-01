@@ -1,7 +1,9 @@
+import Title from "./Title";
+
 const Countdown = ({ tick }) => {
   return (
-    <div className="card">
-      <h2 className="countdown">Prochain round dans {tick || "..."}</h2>
+    <div className="rounded-md shadow-xl max-w-xl w-full p-4 h-full">
+      <Title children={`Prochain round dans ${tick || "..."}`} center={true} />
     </div>
   );
 };
